@@ -32,7 +32,14 @@ public class Result<T> implements Serializable {
     public Result() {
         this.flag = true;
         this.code = StatusCode.OK;
-        this.message = "操作成功!";
+        this.message = "success";
+    }
+
+    public Result(Object data) {
+        this.flag = true;
+        this.code = StatusCode.OK;
+        this.message = "success!";
+        this.data = (T) data;
     }
 
     public boolean isFlag() {
