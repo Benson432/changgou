@@ -149,4 +149,11 @@ public class SkuController {
     }
 
 
+    @GetMapping("/status/{status}")
+    public Result<List<Sku>> findByStatus(@PathVariable String status){
+        List<Sku> list = skuService.findByStatus(status);
+        return new Result<List<Sku>>(list);
+    }
+
+
 }

@@ -18,6 +18,7 @@
         <module>changgou-service-goods</module>
         <module>changgou-service-file</module>
         <module>changgou-service-canal</module>
+        <module>changgou-service-search</module>
     </modules>
 
 

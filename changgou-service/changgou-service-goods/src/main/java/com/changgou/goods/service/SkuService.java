@@ -66,4 +66,14 @@ public interface SkuService {
      * @return
      */
     List<Sku> findAll();
+
+
+    /**
+     * @description: 根据状态查询商品
+     * @param status 商品状态
+     * @return: java.util.List<com.changgou.goods.pojo.Sku>
+     * @author: Benson
+     * @time: 2021/7/19 11:28
+     */
+    List<Sku> findByStatus(String status);
 }
